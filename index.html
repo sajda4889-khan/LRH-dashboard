@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAV BAR  -->
+    <header class="topbar">
+        <div class="topbar-left">
+
+            <button id="menubtn" class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <img src="images.jpg" alt="LRH logo" class="logo-img">
+            <span class="logo">LRH E-Portal</span>
+            <span class="badge">ADMIN</span>
+        </div>
+
+        <div class="topbar-right">
+            <a class="btn-outline"><i class="fa-solid fa-arrow-up-right-from-square"></i>Website</a>
+            <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+            <div class="profile">
+                <div class="avatar"> S </div>
+                <span>Administrator</span>
+                <i class="fa-solid fa-chevron-down small"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- SIDE BAR AND main content area  -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <p class="nav-title">NAVIGATION</p>
+            <a class="nav-link active"><i class="fa-solid fa-table-cells-large"></i>Dashboard</a>
+
+            <p class="nav-title">RESIDENCY</p>
+            <a class="nav-link"><i class="fa-solid fa-user-graduate"></i>Residents</a>
+            <a class="nav-link"><i class="fa-solid fa-bars-staggered"></i>Induction Flow</a>
+            <a class="nav-link"><i class="fa-solid fa-rotate"></i>Rotations</a>
+            <a class="nav-link"><i  class="fa-solid fa-calendar-check"></i>Leave Requests</a>
+
+            <p class="nav-title">ACADEMICS</p>
+            <a class="nav-link"><i class="fa-solid fa-flask"></i>Researches</a>
+            <a class="nav-link"><i class="fa-solid fa-gavel"></i>Disciplinary</a>
+            <a class="nav-link"><i class="fa-solid fa-book"></i>Academic plans</a>
+            <a class="nav-link"><i class="fa-solid fa-message"></i>Messages</a>
+
+            <p class="nav-title">SETTINGS</p>
+            <a class="nav-link between"> 
+                <span><i class="fa-solid fa-sliders"></i>Management</span>
+                <i class="fa-solid fa-chevron-down small"></i>
+            </a>
+        </aside>
+
+        <!-- main content area -->
+        <main class="content">
+            <div class="page-header">
+                <h1>Dashboard Overview</h1>
+                <div class="page-header-right">
+                    <span class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span id="date"></span>
+                    </span>
+                    <button class="btn-outline refresh"><i class="fa-solid fa-rotate"></i>Refresh Data</button>
+                </div>
+            </div>
+            <!-- section 1 having 4 divs -->
+            <section class="stats-grid">
+                <!-- div 1 -->
+                <div class="stat-card green">
+                    <div class="stat-top">
+                        <span class="stat-label">TOTAL RESIDENTS</span>
+                        <div class="icon-box"><i class="fa-solid fa-user-graduate"></i></div>
+                    </div>
+                    <h2>1,041</h2>
+                    <span class="pill"><i class="fa-solid fa-circle-check"></i> Active Trainees</span>
+                </div>
+
+                <!-- div 2 -->
+                 <div class="stat-card blue">
+                    <div class="stat-top">
+                        <span class="stat-label">CLINICAL DEPARTMENTS</span>
+                        <div class="icon-box"><i class="fa-solid fa-hospital"></i></div>
+                    </div>
+                    <h2>62</h2>
+                    <span class="pill"><i class="fa-solid fa-hospital"></i>  Medical Specialties </span>
+                 </div>
+
+                 <!-- div 3 -->
+                  <div class="stat-card orange">
+                    <div class="stat-top">
+                        <span class="stat-label">TRAINING PROGRAMS</span>
+                        <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    </div>
+                    <h2>12</h2>
+                    <span class="pill"><i class="fa-solid fa-certificate"></i>FCPS / MCPS Curricula</span>
+                  </div>
+
+                  <!-- div 4 -->
+                     <div class="stat-card purple">
+                         <div class="stat-top">
+                            <span class="stat-label">FACULTY USERS</span>
+                            <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                        </div>
+                       <h2>134</h2>
+                       <span class="pill"><i class="fa-solid fa-user-tie"></i> HODs and Supervisors</span>
+                     </div>
+            </section>
+
+            <!-- section 2 with the 4 divs and one header -->
+            <section class="panel">
+                <!-- making header -->
+                <div class="panel-header">
+                    <h3><i class="fa-solid fa-bolt bolt"></i>Quick Administrative Actions</h3>
+                    <span class="tag">Direct Navigation</span>
+                </div>
+
+                <!-- making divs -->
+                <div class="actions-grid">
+
+                    <!-- div 1 -->
+                    <a class="action-card green">
+                        <div class="icon-box"><i class="fa-solid fa-user-plus"></i></div>
+                        <div>
+                            <h4>Add Resident</h4>
+                            <p>Enroll new medical trainee</p>
+                        </div>
+                    </a>
+
+                    <!-- div 2 -->
+                     <a class="action-card blue">
+                        <div class="icon-box"><i class="fa-solid fa-user-gear"></i></div>
+                        <div>
+                            <h4>Manage Faculty</h4>
+                            <p>Supervisors and HODs</p>
+                        </div>
+                     </a>
+
+                     <!-- div 3 -->
+                      <a class="action-card purple">
+                        <div class="icon-box"><i class="fa-solid fa-rotate"></i></div>
+                        <div>
+                            <h4>Clinical rotations</h4>
+                            <p>Rotation and assignmnets</p>
+                        </div>
+                     </a>
+
+                     <!-- div 4 -->
+                      <a class="action-card orange">
+                        <div class="icon-box"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <div>
+                            <h4>Residency Roster</h4>
+                            <p>Browse all enrolled residents</p>
+                        </div>
+                     </a>
+                </div>
+            </section>
+
+            <!-- section 3 : with three divs -->
+             <section class="bottom-grid">
+                <!-- div 1 -->
+                <div class="panel">
+                    <div class="panel-header">
+                        <div>
+                          <h3><i class="fa-solid fa-chart-pie green-text"></i>Institutional Overview</h3>
+                          <p class="sub">Academic and Clinical Entities</p>
+                        </div>
+                        <span class="tag green-tag"> Active System</span>
+                    </div>
+                    <div class="chart-box">
+                        <div class="donut"></div>
+                    </div>
+                </div>
+
+                <!-- div 2 -->
+             <div class="panel">
+                  <div class="panel-header">
+                     <div>
+                         <h3><i class="fa-solid fa-stethoscope blue-text"></i> Top Clinical Specialties</h3>
+                         <p class="sub">Highest Resident Volumes</p>
+                     </div>
+                     <span class="tag blue-tag">By Enrolment</span>
+                   </div>
+
+                 <div class="specialty-item">
+                    <div class="specialty-row">
+                       <span class="specialty-name"><i class="fa-solid fa-x-ray green-text"></i> Radiology - LRH</span>
+                        <span class="pill green-pill">45 Residents</span>
+                 </div>
+              <div class="progress">
+                 <div class="progress-fill green-fill" style="width: 100%"></div>
+              </div>
+          </div>
+
+          <div class="specialty-item">
+             <div class="specialty-row">
+                 <span class="specialty-name"><i class="fa-solid fa-user-doctor blue-text"></i> Medical A - LRH</span>
+                  <span class="pill blue-pill">44 Residents</span>
+             </div>
+
+              <div class="progress">
+                <div class="progress-fill blue-fill" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- div 3 -->
+        <div class="panel">
+          <div class="panel-header">
+            <div>
+              <h3><i class="fa-solid fa-clock-rotate-left purple-text"></i> Recent Activity</h3>
+              <p class="sub">Portal Sessions Audit</p>
+            </div>
+            <span class="tag purple-tag"><i class="fa-solid fa-shield-halved"></i> Security Audit</span>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>USER ACCOUNT</th>
+                <th>TIMESTAMP</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="avatar green-bg">A</div>
+                    <div>
+                      <strong>Admin</strong>
+                      <p>Verified Session</p>
+                    </div>
+                  </div>
+                </td>
+                <td>02 Oct, 09:06 AM</td>
+                <td><span class="status-ok"><i class="fa-solid fa-circle-check"></i> OK</span></td>
+              </tr>
+
+
+              <tr>
+                <td>
+                  <div class="user-cell">
+                    <div class="avatar blue-bg">A</div>
+                    <div>
+                      <strong>Admin</strong>
+                      <p>Verified Session</p>
+                    </div>
+                  </div>
+                </td>
+                <td>02 Oct, 09:05 AM</td>
+                <td><span class="status-ok"><i class="fa-solid fa-circle-check"></i> OK</span></td>
+              </tr>
+            </tbody>
+             </table>
+        </div>
+
+        </section>
+     </main>
+</div>
+
+<script>
+    const menubtn = document.getElementById("menubtn")
+    const sidebar = document.getElementById("sidebar")
+    const dateSpan = document.getElementById("date")
+
+    menubtn.addEventListener("click", function () {
+    if (window.innerWidth <= 700) {
+        sidebar.classList.toggle("active")
+    } else {
+        sidebar.classList.toggle("hidden")
+    }
+})
+
+    const today = new Date()
+    dateSpan.textContent = today.toDateString()
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
